@@ -3,9 +3,9 @@ package know_object;
 class Clothes2 {
     String color;
     char size;
-    Clothes2(String color, char size) {
-        this.color = color;
-        this.size = size;
+    Clothes2(String p1, char p2) {
+        color = p1;
+        size = p2;
     }
 }
 
