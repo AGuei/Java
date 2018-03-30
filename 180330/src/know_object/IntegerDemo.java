@@ -2,15 +2,12 @@ package know_object;
 
 public class IntegerDemo {
     public static void main(String[] args) {
-        int data1 = 10;
-        int data2 = 20;
+        Number wrapper1 = 10;
+        Number wrapper2 = 20;
         
-        Integer wrapper1 = new Integer(data1);
-        Integer wrapper2 = new Integer(data2);
-        
-        System.out.println(data1 / 3);
+        System.out.println(20 / 3);
         System.out.println(wrapper1.doubleValue() / 3);
         System.out.println(wrapper1.intValue() / 3);
-        System.out.println(wrapper1.compareTo(wrapper2));
+        System.out.println(wrapper1.equals(wrapper2));
     }
 }
