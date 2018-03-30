@@ -12,10 +12,10 @@ public class Guess {
             System.out.print("猜數字（0 ~ 9）:");
             guess = console.nextInt();
             if(guess > number){
-            	System.out.println("再猜小一點");
+            	System.out.print("猜小一點");
             }
             else if(guess < number){
-            	System.out.println("再猜大一點");
+            	System.out.print("猜大一點");
             }
             count++;
         } while(guess != number);
