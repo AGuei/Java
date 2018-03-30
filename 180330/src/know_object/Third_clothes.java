@@ -3,6 +3,7 @@ package know_object;
 class Clothes {
     String color;
     char size;
+    int price;
 }
 
 public class Third_clothes {
@@ -14,13 +15,16 @@ public class Third_clothes {
     	
         sun.color = "red";
         sun.size = 'S';        
+        sun.price = 300;
         spring.color = "green";
         spring.size = 'M';
+        spring.price = 250;
         winter.color = "black";
         winter.size = 'L';
+        winter.price = 350;
         
-        System.out.printf("sun (%s, %c)%n", sun.color, sun.size);
-        System.out.printf("spring (%s, %c)%n", spring.color, spring.size);
-        System.out.printf("winter (%s, %c)%n", winter.color, winter.size);
+        System.out.printf("sun (%s, %c, %d¤¸)%n", sun.color, sun.size, sun.price);
+        System.out.printf("spring (%s, %c, %d¤¸)%n", spring.color, spring.size, spring.price);
+        System.out.printf("winter (%s, %c, %d¤¸)%n", winter.color, winter.size, winter.price);
     }
 }
