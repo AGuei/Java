@@ -1,19 +1,23 @@
 package know_object;
 
-class Clothes2 {
+class Clothes {
     String color;
     char size;
-    Clothes2(String color, char size) {
-        this.color = color;
-        this.size = size;
-    }
 }
 
 public class Third_clothes {
     public static void main(String[] args) {
-        Clothes2 sun = new Clothes2("red", 'S');
-        Clothes2 spring = new Clothes2("green", 'M');
-        Clothes2 winter = new Clothes2("Black", 'L');
+
+        Clothes sun = new Clothes();
+        Clothes spring = new Clothes();
+        Clothes winter = new Clothes();
+    	
+        sun.color = "red";
+        sun.size = 'S';        
+        spring.color = "green";
+        spring.size = 'M';
+        winter.color = "black";
+        winter.size = 'L';
         
         System.out.printf("sun (%s, %c)%n", sun.color, sun.size);
         System.out.printf("spring (%s, %c)%n", spring.color, spring.size);
