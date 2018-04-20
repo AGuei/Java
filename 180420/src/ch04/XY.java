@@ -12,12 +12,17 @@ public class XY {
         	{0, 0, 0}, 
         	{0, 0, 0}
         };
-        for(int x = 0; x < A.length; x++) {
-            for(int y = 0; y < A[x].length; y++) {
-            	C[x][y] = A[x][y] + B[x][y];
-                System.out.printf("%2d", C[x][y]);
-            }
-            System.out.printf("\n");
+
+    	int x = 0;
+        for(int[] row : C) {
+        	int y=0;
+        	for(int value : row) {
+        		value = A[x][y] + B[x][y];
+        		System.out.printf("%4d", value);
+        		y++;
+        	}
+        	System.out.printf("\n");
+        	x++;
         }
     }
 } 
