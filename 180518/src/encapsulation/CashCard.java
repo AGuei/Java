@@ -13,10 +13,8 @@ class CashCard {
     
     void store(int money) {
         if(money > 0) {
-            this.balance += money;
-            if(money >= 1000) {
-                this.bonus++;
-            }
+            this.balance += money;            
+            this.bonus += money/1000;            
         }
         else {
             System.out.println("儲值是負的？你是來亂的嗎？");
@@ -39,7 +37,12 @@ class CashCard {
     
     int exchange(int bonus) {
         if(bonus > 0) {
-            this.bonus -= bonus;
+        	if(bonus <= this.bonus) {
+                this.bonus -= bonus;
+            }
+            else {
+                System.out.println("紅利不夠啦！");
+            }
         }
         return this.bonus;
     }
