@@ -1,6 +1,7 @@
 package encapsulation;
 
 import java.util.Scanner;
+import test.CashCard;
 
 public class CardApp {
 

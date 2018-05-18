@@ -1,17 +1,17 @@
-package encapsulation;
+package test;
 
-class CashCard {
+public class CashCard {
     private String number;
     private int balance;
     private int bonus;
     
-    CashCard(String number, int balance, int bonus) {
+    public CashCard(String number, int balance, int bonus) {
         this.number = number;
         this.balance = balance;
         this.bonus = bonus;
     }
     
-    void store(int money) {
+    public void store(int money) {
         if(money > 0) {
             this.balance += money;            
             this.bonus += money/1000;            
@@ -35,7 +35,7 @@ class CashCard {
         }
     }
     
-    int exchange(int bonus) {
+    public int exchange(int bonus) {
         if(bonus > 0) {
         	if(bonus <= this.bonus) {
                 this.bonus -= bonus;
@@ -47,15 +47,15 @@ class CashCard {
         return this.bonus;
     }
 
-    int getBalance() {
+    public int getBalance() {
         return balance;
     }
 
-    int getBonus() {
+    public int getBonus() {
         return bonus;
     }
 
-    String getNumber() {
+    public String getNumber() {
         return number;
     }
 }
